@@ -15,7 +15,7 @@ runner_limit=10
 dbName="local-sad"
 dbUser="usersad"
 dbPass="password"
-sadPath="/home/pgauto/SAD"
+sadPath="/home/gpauto/SAD"
 softwarePath=$sadPath
 
 echo "Install system package"
