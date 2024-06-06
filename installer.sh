@@ -25,7 +25,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y adb mariadb-server php
 phpVersion=$(php -v | grep -oP 'PHP \K[0-9]+\.[0-9]+')
 if [[ $phpVersion == '8.1' ]]; then
     cp $scriptPath/bolt/php8.1/bolt.so /etc/php/8.1/cli/
-    echo "extension=/etc/php/8.1/cli/" | sudo tee -a /etc/php/8.1/cli/php.ini
+    echo "extension=/etc/php/8.1/cli/bolt.so" | sudo tee -a /etc/php/8.1/cli/php.ini
 else
     echo "Only support php 8.1 atm"
     exit
