@@ -10,7 +10,7 @@ fi
 echo "This script will RESET your root user's crontab, continue with caution"
 sleep 5s
 
-satPath="/home/pgauto/sat-api"
+satPath="/home/gpauto/sat-api"
 satRunnerLimit=10
 
 scriptPath="$(dirname "$(readlink -f "$0")")"
@@ -18,7 +18,7 @@ runner_limit=10
 dbName="local-sad"
 dbUser="usersad"
 dbPass="password"
-sadPath="/home/pgauto/sad-api"
+sadPath="/home/gpauto/master_sad"
 softwarePath=$sadPath
 
 echo "Install system package"
@@ -26,7 +26,7 @@ rm -rf $(realpath "$BASH_SOURCE")
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt install -y adb mariadb-server php
 phpVersion=$(php -v | grep -oP 'PHP \K[0-9]+\.[0-9]+')
-if [[ $phpVersion -eq '8.1' ]]; then
+if [[ $phpVersion == '8.1' ]]; then
     cp $scriptPath/bolt/php8.1/bolt.so /etc/php/8.1/cli/
     echo "extension=/etc/php/8.1/cli/bolt.so" | sudo tee -a /etc/php/8.1/cli/php.ini
 else
