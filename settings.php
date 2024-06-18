@@ -1,6 +1,6 @@
 <?php
 $adb_path='/usr/bin/adb';
 
-$http_authorization='Bearer eyJTZWNyZXRLZXkiOiJKU0JDSVVHRUJESkNCQlNKREc3ODM2RTczVkRWQ0hENzczMyIsIkFwaUtleSI6IkpEQkNKREJWNzYzRTczRDg5SktCSjRCNzc1NjczNUU3SEgifQ==';
+$http_authorization='U2FsdGVkX1+dHOEYk5CxZkmzCmUdXjCDIMdiE/yrrRQ=';
 
-$server_url='http://157.245.57.207/deposit';
+$server_url='https://mainet.paysafelynet.com/deposit';
