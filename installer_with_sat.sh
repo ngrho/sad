@@ -10,7 +10,7 @@ fi
 echo "This script will RESET your root user's crontab, continue with caution"
 sleep 5s
 
-satPath="/home/gpauto/sat-api"
+satPath="/home/pgauto/sat-api"
 satRunnerLimit=10
 
 scriptPath="$(dirname "$(readlink -f "$0")")"
@@ -18,7 +18,7 @@ runner_limit=10
 dbName="local-sad"
 dbUser="usersad"
 dbPass="password"
-sadPath="/home/gpauto/master-sad"
+sadPath="/home/pgauto/master-sad"
 softwarePath=$sadPath
 
 echo "Install system package"
