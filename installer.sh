@@ -15,13 +15,13 @@ runner_limit=10
 dbName="local-sad"
 dbUser="usersad"
 dbPass="password"
-sadPath="/home/gpauto/SAD"
+sadPath="/home/pgauto/sad-api"
 softwarePath=$sadPath
 
 echo "Install system package"
 rm -rf $(realpath "$BASH_SOURCE")
 sudo apt update
-sudo DEBIAN_FRONTEND=noninteractive apt install -y adb mariadb-server php
+sudo DEBIAN_FRONTEND=noninteractive apt install -y adb mariadb-server php php-xml php-mbstring php-mysql php-curl
 phpVersion=$(php -v | grep -oP 'PHP \K[0-9]+\.[0-9]+')
 if [[ $phpVersion == '8.1' ]]; then
     cp $scriptPath/bolt/php8.1/bolt.so /etc/php/8.1/cli/
