@@ -6,7 +6,7 @@ while true; do
     
     end_time=$(date +%s)
     elapsed_time=$((end_time - start_time))
-    if [ $elapsed_time -lt 60 ]; then
-        sleep $((60 - elapsed_time))
+    if [ $elapsed_time -lt 10 ]; then
+        sleep $((10 - elapsed_time))
     fi
 done

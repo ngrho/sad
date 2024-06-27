@@ -69,7 +69,7 @@ CREATE TABLE `saldo_` (
   `serial` varchar(100) NOT NULL DEFAULT '',
   `bank` varchar(100) NOT NULL DEFAULT '',
   `norek` varchar(100) NOT NULL DEFAULT '',
-  `saldo` varchar(100) DEFAULT NULL,
+  `saldo` longtext DEFAULT NULL,
   `maintenance` varchar(1) NOT NULL DEFAULT '0',
   `createdAt` datetime NOT NULL DEFAULT current_timestamp(),
   `status` varchar(1) NOT NULL DEFAULT '1',
