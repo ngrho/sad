@@ -28,7 +28,7 @@ CREATE TABLE `log_` (
   `bank` varchar(100) NOT NULL DEFAULT '',
   `norek` varchar(100) NOT NULL DEFAULT '',
   `tipe` varchar(100) NOT NULL,
-  `saldo` varchar(100) DEFAULT NULL,
+  `saldo` longtext DEFAULT NULL,
   `createdAt` datetime NOT NULL DEFAULT current_timestamp(),
   `status` varchar(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
