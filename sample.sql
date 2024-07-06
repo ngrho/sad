@@ -52,6 +52,7 @@ CREATE TABLE `mutasi_` (
   `amount` double NOT NULL DEFAULT 0,
   `createdAt` datetime NOT NULL DEFAULT current_timestamp(),
   `status` varchar(1) NOT NULL DEFAULT '0',
+  `type` varchar(2) NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
